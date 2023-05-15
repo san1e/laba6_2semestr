@@ -1,0 +1,15 @@
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\bin\Debug\net7.0\ConsoleApp2.exe
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\bin\Debug\net7.0\ConsoleApp2.deps.json
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\bin\Debug\net7.0\ConsoleApp2.runtimeconfig.json
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\bin\Debug\net7.0\ConsoleApp2.dll
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\bin\Debug\net7.0\ConsoleApp2.pdb
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.AssemblyInfo.cs
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.dll
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\refint\ConsoleApp2.dll
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.pdb
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ConsoleApp2.genruntimeconfig.cache
+\\Mac\Home\Desktop\univer\PALM_2_SEMESTR\laba6_2semestr\ConsoleApp2\obj\Debug\net7.0\ref\ConsoleApp2.dll

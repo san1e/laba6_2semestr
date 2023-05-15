@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ZodiakData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Zodiak>
+    <FirstName>Oleg</FirstName>
+    <LastName>Klymenko</LastName>
+    <FZodiakSign>Ruba</FZodiakSign>
+    <Date>1.3.1980</Date>
+  </Zodiak>
+</ZodiakData>
