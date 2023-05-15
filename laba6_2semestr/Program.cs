@@ -20,13 +20,13 @@ namespace laba6_2semestr
         [XmlElement("Date")]
         public string Date;
 
-        public Zodiak(string FirstName, string LastName, string ZodiakSign, string DateOfBirth,string Date)
+        public Zodiak(string firstName, string lastName, string zodiakSign, int[] dateOfBirth,string date)
         {
-            FirstName = FirstName;
-            LastName = LastName;
-            ZodiakSign = ZodiakSign;
-            DateOfBirth = DateOfBirth;
-            Date = string.Join(".", DateOfBirth);
+            FirstName = firstName;
+            LastName = lastName;
+            ZodiakSign = zodiakSign;
+            DateOfBirth = dateOfBirth;
+            Date = string.Join(".", dateOfBirth);
         }
         public int CompareTo(Zodiak obj)
         {
@@ -45,6 +45,38 @@ namespace laba6_2semestr
     }
     internal class Program
     {
+        //public static bool IsDateOfBirthValid(string zodiacSign, int[] dateOfBirth)
+        //{
+        //    switch (zodiacSign)
+        //    {
+        //        case "Овен":
+        //            return (dateOfBirth[0] >= 21 && dateOfBirth[1] == 3) || (dateOfBirth[0] <= 20 && dateOfBirth[1] == 4);
+        //        case "Телець":
+        //            return (dateOfBirth[0] >= 21 && dateOfBirth[1] == 4) || (dateOfBirth[0] <= 20 && dateOfBirth[1] == 5);
+        //        case "Близнюки":
+        //            return (dateOfBirth[0] >= 21 && dateOfBirth[1] == 5) || (dateOfBirth[0] <= 21 && dateOfBirth[1] == 6);
+        //        case "Рак":
+        //            return (dateOfBirth[0] >= 22 && dateOfBirth[1] == 6) || (dateOfBirth[0] <= 22 && dateOfBirth[1] == 7);
+        //        case "Лев":
+        //            return (dateOfBirth[0] >= 23 && dateOfBirth[1] == 7) || (dateOfBirth[0] <= 22 && dateOfBirth[1] == 8);
+        //        case "Діва":
+        //            return (dateOfBirth[0] >= 23 && dateOfBirth[1] == 8) || (dateOfBirth[0] <= 22 && dateOfBirth[1] == 9);
+        //        case "Терези":
+        //            return (dateOfBirth[0] >= 23 && dateOfBirth[1] == 9) || (dateOfBirth[0] <= 22 && dateOfBirth[1] == 10);
+        //        case "Скорпіон":
+        //            return (dateOfBirth[1] == 10 && dateOfBirth[0] >= 23) || (dateOfBirth[1] == 11 && dateOfBirth[0] <= 21);
+        //        case "Стрілець":
+        //            return (dateOfBirth[0] >= 22 && dateOfBirth[1] == 11) || (dateOfBirth[0] <= 21 && dateOfBirth[1] == 12);
+        //        case "Козеріг":
+        //            return (dateOfBirth[0] >= 22 && dateOfBirth[1] == 12) || (dateOfBirth[0] <= 20 && dateOfBirth[1] == 1);
+        //        case "Водолій":
+        //            return (dateOfBirth[0] >= 21 && dateOfBirth[1] == 1) || (dateOfBirth[0] <= 18 && dateOfBirth[1] == 2);
+        //        case "Риби":
+        //            return (dateOfBirth[0] >= 19 && dateOfBirth[1] == 2) || (dateOfBirth[0] <= 20 && dateOfBirth[1] == 3);
+        //        default:
+        //            return false;
+        //    }
+        //}
         static void Main(string[] args)
         {
             Console.Write("Введiть кiлькiсть людей: ");
@@ -53,7 +85,7 @@ namespace laba6_2semestr
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine($"Людина №{i + 1}");
-                Console.Write("iм'я: ");
+                Console.Write("Iм'я: ");
                 people[i].FirstName = Console.ReadLine();
                 Console.Write("Прiзвище: ");
                 people[i].LastName = Console.ReadLine();
@@ -62,8 +94,54 @@ namespace laba6_2semestr
                 Console.Write("Дата народження (у форматi ДД.ММ.РРРР): ");
                 people[i].DateOfBirth = Console.ReadLine().Split('.').Select(int.Parse).ToArray();
                 people[i].Date = string.Join(".", people[i].DateOfBirth);
+                //bool isValid = IsDateOfBirthValid(people[i].ZodiakSign, people[i].DateOfBirth);
+                //if (isValid)
+                //{
+                //    Console.WriteLine("знак i дата народження не вiдповiдають одне одному.");
+                //    Console.WriteLine("змiнiть або дату народження, або знак зодiаку.");
+                //    Console.Write("Змiнити дату народження? (так / нi): ");
+                //    string changeDateAnswer = Console.ReadLine();
 
+                //    if (changeDateAnswer.ToLower() == "так")
+                //    {
+                //        Console.Write("Нова дата народження (у форматi ДД.ММ.РРРР): ");
+                //        int[] newDateOfBirth = Console.ReadLine().Split('.').Select(int.Parse).ToArray();
+                //        isValid = IsDateOfBirthValid(people[i].ZodiakSign, newDateOfBirth);
+
+                //        if (isValid)
+                //        {
+                //            people[i].DateOfBirth = newDateOfBirth;
+                //            people[i].Date = string.Join(".", people[i].DateOfBirth);
+                //            Console.WriteLine("Дата народження змiнена успiшно.");
+                //        }
+                //        else
+                //        {
+                //            Console.WriteLine("Нова дата народження не вiдповiдає змiнi знаку зодiаку.");
+                //        }
+                //    }
+
+                //    Console.Write("Змiнити знак зодiаку? (так / нi): ");
+                //    string changeZodiacAnswer = Console.ReadLine();
+
+                //    if (changeZodiacAnswer.ToLower() == "так")
+                //    {
+                //        Console.Write("Новий знак зодiаку: ");
+                //        string newZodiacSign = Console.ReadLine();
+                //        isValid = IsDateOfBirthValid(newZodiacSign, people[i].DateOfBirth);
+
+                //        if (isValid)
+                //        {
+                //            people[i].ZodiakSign = newZodiacSign;
+                //            Console.WriteLine("Знак зодiаку змiнено успiшно.");
+                //        }
+                //        else
+                //        {
+                //            Console.WriteLine("Новий знак зодiаку не вiдповiдає змiнi дати народження.");
+                //        }
+                //    }
+                //}
             }
+
             Console.Clear();
 
             Array.Sort(people);
